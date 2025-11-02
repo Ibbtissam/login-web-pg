@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+
+    <div class="h-screen w-full flex  flex-wrap justify-center items-center bg-[url('https://i.pinimg.com/1200x/31/8c/37/318c378f23e5cfef5d0f15e4d6cf7557.jpg')] 
+bg-cover bg-center bg-no-repeat">
+
+        <div class="h-[550px] w-[370px] bg-[#FFFEED] rounded-xl  shadow-xl/30 shadow-black ">
+            <img class="ml-[100px] mt-1.5" src="img/Screenshot 2025-11-02 224926.png" alt="">
+
+            <div class="h-[434px] w-[370px] mt-3 rounded-tl-[90px] bg-[#13403B] rounded-xl">
+
+                <h1 class="text-5xl text-amber-50 font-semibold text-center mt-2.5">LOG IN</h1>
+
+
+                <form action="" onsubmit="contactus(); return false">
+
+                    <input class="bg-white w-70 h-[41px] translate-x-[50px] mt-[30px] pl-3 rounded-xl" type="text"
+                        name="name" id="name" placeholder="Enter User Name">
+
+                    <input class="bg-white w-70 h-[41px] translate-x-[50px] mt-[25px] pl-3 rounded-xl" type="email"
+                        name="email" id="email" placeholder="Enter Your Email">
+
+                    <input class="bg-white w-70 h-[41px] translate-x-[50px] mt-[25px] pl-3 rounded-xl" type="password"
+                        name="password" id="password" placeholder="Enter Your Password">
+
+                    <div class="flex items-center justify-evenly text-sm mb-1 mt-4.5">
+                        <label class="flex items-center">
+                            <input type="checkbox" checked class="accent-green-600 w-4 h-4 mr-2" />
+                            Remember me
+                        </label>
+                        <a href="#" class="text-[#000000] hover:underline">Forgot password?</a>
+                    </div>
+
+
+
+                    <input
+                        class="bg-black w-70 h-[41px] translate-x-[50px] mt-[30px] text-white font-bold hover:bg-white hover:text-black hover:border-2 hover:border-black cursor-pointer rounded-xl"
+                        type="submit" value="LOG IN">
+
+                </form>
+
+            </div>
+        </div>
+
+        <script>
+            function contactus() {
+                let nameRef = document.getElementById("name");
+                let emailRef = document.getElementById("email");
+                let passwordRef = document.getElementById("password");
+
+                let name = nameRef.value.trim();
+                let email = emailRef.value.trim();
+                let password = passwordRef.value.trim();
+
+                if (name && email && password) {
+                    console.log(" Successfully Submitted");
+                    console.log("Name:", name);
+                    console.log("Email:", email);
+                    console.log("Password:", password);
+                } else {
+                    if (!name) {
+                        console.log(" Enter Your Name");
+                    } else if (!email) {
+                        console.log(" Enter Your Email");
+                    } else if (!password) {
+                        console.log(" Enter Your Password");
+                    }
+                }
+
+                window.location.href = "thanks.html";
+            }
+        </script>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
